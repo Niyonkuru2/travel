@@ -173,11 +173,10 @@ const Hero = () => {
   {/* Progress Bar */}
   <div className="flex-1 mx-4 h-1 bg-gray-400 rounded overflow-hidden relative">
     <div
-      className="h-full bg-yellow-400 transition-all duration-300 absolute left-0 top-0"
-      style={{ width: `${progress}%` }}
-    />
+      className="h-full bg-yellow-400 transition-all duration-500 absolute left-0 top-0"
+      style={{ width: `${((currentIndex + 1) / cards.length) * 100}%` }}
+    ></div>
   </div>
-
   {/* Counter */}
   <div className="text-white text-4xl font-bold w-10 text-right mr-4">
     {`0${currentIndex + 1}`}
